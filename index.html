@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Yousef Sala7 - Award-winning 3D VFX artist, motion designer, and creative technologist. Specializing in high-end visual experiences and immersive digital solutions.">
+  <meta name="keywords" content="3D Artist, VFX, Motion Design, Creative Director, Portfolio">
+  <meta name="author" content="Yousef Sala7">
+  <meta name="theme-color" content="#020204">
+  <meta name="color-scheme" content="dark light">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yousef-sala7.com">
+  <meta property="og:title" content="Yousef Sala7 - 3D VFX & Motion Design Portfolio">
+  <meta property="og:description" content="Discover premium 3D visualization and VFX work by Yousef Sala7.">
+  <meta property="og:image" content="https://yousef-sala7.com/og-image.jpg">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <title>Yousef Sala7 - 3D VFX & Motion Design Expert</title>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-weight='bold' fill='%232A82FF'%3EY%3C/text%3E%3C/svg%3E">
+  
+  <!-- Analytics -->
+  <script async src="https://cdn.jsdelivr.net/gh/analytics/analytics@latest/analytics.min.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen" aria-label="Loading">
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Initializing experience</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+
+  <!-- Animated Background -->
+  <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+  
+  <!-- Floating Particles -->
+  <div id="particlesContainer" class="particles-container" aria-hidden="true"></div>
+
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header/Navigation -->
+  <header id="header" class="header" role="banner">
+    <nav class="navbar container" role="navigation">
+      <div class="navbar-brand">
+        <a href="#" class="logo" aria-label="Yousef Sala7 - Home">
+          <span class="logo-icon">Y</span>
+          <span class="logo-text">Yousef Sala7</span>
+        </a>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link" data-section="hero">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+          <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+          <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-controls">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode" aria-pressed="true">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-hero" role="region" aria-label="Hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle" data-aos="fade-up">Welcome to my digital space</p>
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Creative <span class="gradient-text">Technologist</span> & 3D Visionary
+          </h1>
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+            Crafting immersive digital experiences through cutting-edge 3D visualization, motion design, and interactive technology. Where art meets innovation.
+          </p>
+
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+            <button class="btn btn-primary" id="cta-primary">
+              <span>View My Work</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <button class="btn btn-secondary" id="cta-contact">
+              <span>Get in Touch</span>
+              <svg class="icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Awards Won</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=500&h=600&fit=crop" alt="Yousef Sala7" class="hero-image">
+            <div class="hero-image-border"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-about" role="region" aria-label="About">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Know Me Better</p>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">With over 10 years of experience in the creative industry, I've helped brands and studios push the boundaries of visual storytelling.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card about-story" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-card-header">
+              <div class="about-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"></path>
+                </svg>
+              </div>
+              <h3>My Journey</h3>
+            </div>
+            <p>Started as a graphic designer, evolved into a 3D artist, and now lead teams in creating transformative digital experiences. Passionate about bridging the gap between art and technology.</p>
+          </div>
+
+          <div class="about-card about-passion" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-card-header">
+              <div class="about-icon passion">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                </svg>
+              </div>
+              <h3>My Passion</h3>
+            </div>
+            <p>I'm obsessed with pushing creative boundaries. Every project is an opportunity to experiment, innovate, and create something that hasn't been seen before. Quality and creativity are non-negotiable.</p>
+          </div>
+
+          <div class="about-card about-approach" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-card-header">
+              <div class="about-icon approach">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                </svg>
+              </div>
+              <h3>My Approach</h3>
+            </div>
+            <p>Data-driven decisions combined with artistic instinct. I listen to clients, understand their vision, and deliver solutions that exceed expectations. Collaboration and communication are key.</p>
+          </div>
+        </div>
+
+        <div class="about-highlight" data-aos="fade-up" data-aos-delay="400">
+          <div class="highlight-text">
+            <p><strong>Beyond the portfolio:</strong> I'm also passionate about mentoring emerging artists, contributing to open-source projects, and speaking at industry conferences. When I'm not designing, you'll find me exploring new technologies, teaching workshops, or hiking in nature.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-services" role="region" aria-label="Services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">What I Offer</p>
+          <h2 class="section-title">Services & Expertise</h2>
+          <p class="section-description">Comprehensive creative solutions tailored to bring your vision to life with precision and innovation.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <h3>3D Animation</h3>
+            <p>Professional 3D character animation, motion graphics, and visual effects using industry-standard tools like Blender, Maya, and Cinema 4D.</p>
+            <ul class="service-features">
+              <li>Character Animation</li>
+              <li>Motion Graphics</li>
+              <li>Visual Effects</li>
+              <li>Rigging & Modeling</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>User-centered digital interfaces combining aesthetic appeal with functional excellence. Wireframing, prototyping, and interactive design.</p>
+            <ul class="service-features">
+              <li>Web Design</li>
+              <li>App Design</li>
+              <li>User Research</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <polyline points="2 12 12 17 22 12"></polyline>
+                <polyline points="2 17 12 22 22 17"></polyline>
+              </svg>
+            </div>
+            <h3>Interactive Experiences</h3>
+            <p>WebGL, AR/VR, and interactive installations that engage audiences in innovative ways. Pushing the boundaries of digital interaction.</p>
+            <ul class="service-features">
+              <li>WebGL Development</li>
+              <li>AR/VR Experiences</li>
+              <li>Interactive Installations</li>
+              <li>Real-time Rendering</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Branding</h3>
+            <p>Complete brand identity development from logo design to brand guidelines. Creating memorable visual identities that resonate with audiences.</p>
+            <ul class="service-features">
+              <li>Logo Design</li>
+              <li>Brand Guidelines</li>
+              <li>Visual Identity</li>
+              <li>Brand Strategy</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>Video Production</h3>
+            <p>Concept to delivery video production including scripting, cinematography, post-production, and color grading for compelling narratives.</p>
+            <ul class="service-features">
+              <li>Cinematography</li>
+              <li>Post-Production</li>
+              <li>Color Grading</li>
+              <li>Sound Design</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l-5.5 9h11z"></path>
+                <path d="M17.5 13c.8 2.7 2.45 5.5 4.5 8"></path>
+                <path d="M6.5 13c-.8 2.7-2.45 5.5-4.5 8"></path>
+                <path d="M12 13v8"></path>
+              </svg>
+            </div>
+            <h3>Consulting</h3>
+            <p>Strategic creative direction and technical consulting for organizations looking to elevate their digital presence and creative output.</p>
+            <ul class="service-features">
+              <li>Creative Strategy</li>
+              <li>Technical Consultation</li>
+              <li>Team Training</li>
+              <li>Project Leadership</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-cta" data-aos="fade-up" data-aos-delay="400">
+          <p>Ready to start a project? Let's collaborate.</p>
+          <button class="btn btn-primary">Start a Project</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section-portfolio" role="region" aria-label="Portfolio">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Featured Work</p>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-description">A curated selection of recent projects showcasing diverse skills and creative approaches.</p>
+        </div>
+
+        <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="3d">3D Animation</button>
+          <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item" data-filter="3d" data-aos="fade-up" data-aos-delay="150">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=600&h=400&fit=crop" alt="Project 1">
+              <div class="portfolio-overlay">
+                <button class="portfolio-view-btn" aria-label="View Project 1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Futuristic Product Visualization</h3>
+              <p>Advanced 3D modeling and animation for cutting-edge tech product launch.</p>
+              <div class="portfolio-tags">
+                <span class="tag">3D</span>
+                <span class="tag">Product</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-filter="motion" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Project 2">
+              <div class="portfolio-overlay">
+                <button class="portfolio-view-btn" aria-label="View Project 2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Brand Motion Graphics</h3>
+              <p>Dynamic motion graphics package for international marketing campaign.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Motion</span>
+                <span class="tag">Branding</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-filter="web" data-aos="fade-up" data-aos-delay="250">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-adf4e565d871?w=600&h=400&fit=crop" alt="Project 3">
+              <div class="portfolio-overlay">
+                <button class="portfolio-view-btn" aria-label="View Project 3">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Interactive Web Experience</h3>
+              <p>Immersive WebGL-powered website with real-time 3D visualization.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Web</span>
+                <span class="tag">Interactive</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-filter="branding" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Project 4">
+              <div class="portfolio-overlay">
+                <button class="portfolio-view-btn" aria-label="View Project 4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Complete Brand Identity</h3>
+              <p>Full branding package including logo, guidelines, and visual identity system.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Identity</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-filter="3d" data-aos="fade-up" data-aos-delay="350">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8e7b9caf?w=600&h=400&fit=crop" alt="Project 5">
+              <div class="portfolio-overlay">
+                <button class="portfolio-view-btn" aria-label="View Project 5">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Architectural Visualization</h3>
+              <p>Photorealistic 3D architectural renders for premium real estate project.</p>
+              <div class="portfolio-tags">
+                <span class="tag">3D</span>
+                <span class="tag">Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-filter="motion" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-image">
+              <img src="https://images.unsplash.com/photo-1598933247903-fd2a7fa95cb2?w=600&h=400&fit=crop" alt="Project 6">
+              <div class="portfolio-overlay">
+                <button class="portfolio-view-btn" aria-label="View Project 6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Commercial Advertisement</h3>
+              <p>Full-production commercial with 3D integration and post-production.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Motion</span>
+                <span class="tag">Commercial</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-cta" data-aos="fade-up" data-aos-delay="450">
+          <p>Want to see more? Browse my complete portfolio.</p>
+          <button class="btn btn-secondary">View Full Portfolio</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-skills" role="region" aria-label="Skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Technical Expertise</p>
+          <h2 class="section-title">Skills & Tools</h2>
+          <p class="section-description">Proficient in industry-leading software and cutting-edge technologies.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skill-category-title">3D & Animation</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Blender</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Cinema 4D</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Maya</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">After Effects</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+            <h3 class="skill-category-title">Design</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Figma</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 93%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Adobe XD</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Photoshop</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 94%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Illustrator</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 91%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="skill-category-title">Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 87%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">WebGL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Three.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="250">
+            <h3 class="skill-category-title">Emerging Tech</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">AR/VR Development</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">AI Integration</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Real-time Rendering</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 89%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Game Development</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 84%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-certifications" data-aos="fade-up" data-aos-delay="300">
+          <h3>Certifications & Achievements</h3>
+          <div class="certifications-grid">
+            <div class="certification">
+              <div class="cert-icon">🏆</div>
+              <p>Adobe Certified Expert</p>
+            </div>
+            <div class="certification">
+              <div class="cert-icon">🎓</div>
+              <p>Blender Master Certification</p>
+            </div>
+            <div class="certification">
+              <div class="cert-icon">⭐</div>
+              <p>Industry Recognition Award</p>
+            </div>
+            <div class="certification">
+              <div class="cert-icon">🚀</div>
+              <p>Technology Innovation Leader</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-testimonials" role="region" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Client Feedback</p>
+          <h2 class="section-title">What Clients Say</h2>
+          <p class="section-description">Real feedback from real clients who've worked with me.</p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonialsCarousel">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"Yousef transformed our vision into reality. His technical expertise combined with creative thinking delivered results that exceeded our expectations. Highly recommended."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LS</div>
+              <div class="author-info">
+                <h4>Lisa Anderson</h4>
+                <p>Creative Director, TechCorp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"Working with Yousef is like having a strategic partner, not just a vendor. His insights and proactive approach made the entire project smoother and the results stunning."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MJ</div>
+              <div class="author-info">
+                <h4>Marcus Johnson</h4>
+                <p>CEO, Digital Innovations</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"The attention to detail and commitment to quality is remarkable. Yousef doesn't just deliver files; he delivers experiences. Our audience engagement tripled after launch."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SC</div>
+              <div class="author-info">
+                <h4>Sarah Chen</h4>
+                <p>Marketing Manager, Global Brands</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">"Exceptional talent and professionalism. Yousef stayed involved throughout the entire process and was always available for revisions and improvements. Five stars isn't enough!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JW</div>
+              <div class="author-info">
+                <h4>James Wilson</h4>
+                <p>Studio Director, Creative Studios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-nav">
+          <button class="nav-btn prev" id="prevTestimonial" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="nav-btn next" id="nextTestimonial" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section-blog" role="region" aria-label="Blog">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Insights & Tutorials</p>
+          <h2 class="section-title">Latest Articles</h2>
+          <p class="section-description">Tips, tutorials, and insights from my experience in the creative industry.</p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=600&h=300&fit=crop" alt="Blog Post 1">
+              <span class="blog-category">3D Design</span>
+            </div>
+            <div class="blog-content">
+              <h3>Advanced Blender Techniques for Photorealistic Rendering</h3>
+              <p>Learn the advanced techniques I use to create photorealistic 3D renders using Blender's latest features and render engines.</p>
+              <div class="blog-meta">
+                <span class="blog-date">March 28, 2024</span>
+                <span class="blog-read-time">8 min read</span>
+              </div>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=300&fit=crop" alt="Blog Post 2">
+              <span class="blog-category">Motion Design</span>
+            </div>
+            <div class="blog-content">
+              <h3>Creating Smooth Motion Graphics with After Effects</h3>
+              <p>Discover workflow optimization and animation principles that transform ordinary motion graphics into captivating visual storytelling.</p>
+              <div class="blog-meta">
+                <span class="blog-date">March 22, 2024</span>
+                <span class="blog-read-time">6 min read</span>
+              </div>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-adf4e565d871?w=600&h=300&fit=crop" alt="Blog Post 3">
+              <span class="blog-category">Web Development</span>
+            </div>
+            <div class="blog-content">
+              <h3>Building Interactive 3D Web Experiences with Three.js</h3>
+              <p>A comprehensive guide to creating interactive 3D experiences on the web using Three.js, WebGL, and modern JavaScript.</p>
+              <div class="blog-meta">
+                <span class="blog-date">March 15, 2024</span>
+                <span class="blog-read-time">10 min read</span>
+              </div>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=300&fit=crop" alt="Blog Post 4">
+              <span class="blog-category">Design System</span>
+            </div>
+            <div class="blog-content">
+              <h3>Building Scalable Design Systems for Teams</h3>
+              <p>Best practices for creating and maintaining design systems that scale with your team and product growth.</p>
+              <div class="blog-meta">
+                <span class="blog-date">March 8, 2024</span>
+                <span class="blog-read-time">7 min read</span>
+              </div>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8e7b9caf?w=600&h=300&fit=crop" alt="Blog Post 5">
+              <span class="blog-category">Performance</span>
+            </div>
+            <div class="blog-content">
+              <h3>Optimizing 3D Assets for Web Performance</h3>
+              <p>Practical tips for optimizing 3D models, textures, and assets to achieve better performance on web platforms.</p>
+              <div class="blog-meta">
+                <span class="blog-date">February 28, 2024</span>
+                <span class="blog-read-time">9 min read</span>
+              </div>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1598933247903-fd2a7fa95cb2?w=600&h=300&fit=crop" alt="Blog Post 6">
+              <span class="blog-category">Career</span>
+            </div>
+            <div class="blog-content">
+              <h3>Freelancing as a Creative Professional: A Complete Guide</h3>
+              <p>Lessons learned from 10+ years as a freelance creative: pricing, client management, and building a sustainable career.</p>
+              <div class="blog-meta">
+                <span class="blog-date">February 20, 2024</span>
+                <span class="blog-read-time">12 min read</span>
+              </div>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="blog-cta" data-aos="fade-up" data-aos-delay="400">
+          <button class="btn btn-secondary">View All Articles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-contact" role="region" aria-label="Contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Get in Touch</p>
+          <h2 class="section-title">Let's Create Something Amazing</h2>
+          <p class="section-description">Have a project in mind? Let's discuss how we can work together to bring your ideas to life.</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <h3>Location</h3>
+              <p>Dubai, United Arab Emirates</p>
+              <p class="secondary">Available for remote projects worldwide</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3>Phone</h3>
+              <p>+971 50 123 4567</p>
+              <p class="secondary">Call or WhatsApp</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@yousef-sala7.com">hello@yousef-sala7.com</a></p>
+              <p class="secondary">Response within 24 hours</p>
+            </div>
+
+            <div class="contact-card social">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="1"></circle>
+                  <path d="M12 1v6m0 6v6"></path>
+                  <circle cx="4.22" cy="4.22" r="1"></circle>
+                  <path d="M3.51 3.51l4.24 4.24m4.24 4.24l4.24 4.24"></path>
+                  <circle cx="1" cy="12" r="1"></circle>
+                  <path d="M1 12h6m6 0h6"></path>
+                  <circle cx="4.22" cy="19.78" r="1"></circle>
+                  <path d="M3.51 20.49l4.24-4.24m4.24-4.24l4.24-4.24"></path>
+                </svg>
+              </div>
+              <h3>Social</h3>
+              <div class="social-links">
+                <a href="#" title="LinkedIn" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#" title="Instagram" rel="noopener noreferrer">Instagram</a>
+                <a href="#" title="Twitter" rel="noopener noreferrer">Twitter</a>
+                <a href="#" title="Behance" rel="noopener noreferrer">Behance</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" data-aos="fade-up" data-aos-delay="200">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Project Type *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a project type</option>
+                <option value="3d-animation">3D Animation</option>
+                <option value="motion-graphics">Motion Graphics</option>
+                <option value="ui-ux">UI/UX Design</option>
+                <option value="branding">Branding</option>
+                <option value="web">Web Development</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget range</option>
+                <option value="1000-5000">$1,000 - $5,000</option>
+                <option value="5000-10000">$5,000 - $10,000</option>
+                <option value="10000-25000">$10,000 - $25,000</option>
+                <option value="25000+">$25,000+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea id="message" name="message" required placeholder="Tell me about your project, goals, and timeline..." rows="5"></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the privacy policy and terms of service</label>
+            </div>
+
+            <div class="form-loading" id="formLoading" style="display: none;">
+              <div class="spinner"></div>
+              <p>Sending message...</p>
+            </div>
+
+            <div class="form-message" id="formMessage" style="display: none;"></div>
+
+            <button type="submit" class="btn btn-primary btn-large">
+              <span>Send Message</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" role="region" aria-label="Call to Action">
+      <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+          <h2>Ready to Start Your Project?</h2>
+          <p>Let's collaborate and create something extraordinary together.</p>
+          <button class="btn btn-primary btn-large">
+            <span>Begin Your Journey</span>
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="footer-content container">
+      <div class="footer-section">
+        <h3>Yousef Sala7</h3>
+        <p>Award-winning creative technologist specializing in 3D visualization and immersive digital experiences.</p>
+        <div class="footer-socials">
+          <a href="#" title="LinkedIn" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+            </svg>
+          </a>
+          <a href="#" title="Instagram" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#" title="Twitter" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7s1.08-1.81 2-3.81c-1 1-2 1.5-3 1.5z"></path>
+            </svg>
+          </a>
+          <a href="#" title="Behance" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.5 7C6.22 7 6 6.78 6 6.5S6.22 6 6.5 6 7 6.22 7 6.5 6.78 7 6.5 7M18 6h-3.5v1h3.5V6M7 8.5H6v4h1c.82 0 1.5-.67 1.5-1.5 0-.68-.52-1.25-1.2-1.45C7.28 9.12 7 8.85 7 8.5M6 5h2c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1s.45 1 1 1z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">3D Animation</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">Branding</a></li>
+          <li><a href="#services">Web Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Yousef Sala7. All rights reserved. | Crafted with passion and precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
